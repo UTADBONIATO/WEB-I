@@ -1,0 +1,21 @@
+:root{
+  --bg:#0f1216; --card:#161b22; --text:#e8eef5; --muted:#a6b3c2;
+  --accent:#65c3ff; --border:#26303b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial}
+.app{max-width:720px;margin:40px auto;padding:0 16px}
+h1{text-align:left;margin:0 0 16px;font-size:clamp(1.6rem,2.5vw,2.2rem);}
+
+.load{
+  background:var(--accent);color:#062436;border:0;border-radius:12px;
+  padding:12px 16px;font-weight:700;cursor:pointer;margin-bottom:12px
+}
+.load:hover{filter:brightness(1.05)}
+
+.list{list-style:disc;padding-left:22px;margin:10px 0 0}
+.list li{
+  background:var(--card);border:1px solid var(--border);margin:8px 0;
+  padding:10px 12px;border-radius:12px
+}
+.hint{color:var(--muted);margin-top:14px;font-size:0.95rem}
